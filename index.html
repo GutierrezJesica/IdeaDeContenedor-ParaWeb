@@ -1,45 +1,64 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/estilos.css" rel="stylesheet" type="text/css">
-    <title>Ojales de hojas</title>
-</head>
-<body>
-<div id="contenedor">
-<div id="anillado">
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-    <div id="ojal"></div>
-</div>
-    <div id="hoja">
-        <div class="texto">Hola, te cuento cual era la idea original para este diseño. <br>
-            <br>
-            Queria usar este modelo de hoja con ojales para que sea el contenedor 
-            de un sitio web adaptable. Pero actualmente no tengo los conocimientos 
-            necesarios para hacer que el numero de ojales incremente o decienda segun el 
-            contenido que se agregue al sitio. <br>
-            <br>
-            Si vos sabes como hacerlo, te invito a que descargues este repositorio y agregues
-            en otra rama lo que se necesita para que el diseño se vuelva adaptable. <br>
-            <br>
-            Desda ya muchas gracias por leerme. <br>
-            Un saludo.
+<div class="contenedor">
+    <div class="grilla">
+        <div class="left">
         </div>
-    </div>        
+        <div class="center">
+            <a class="numero">1</a>
+        </div>
+        <div class="right">
+            <hr>
+        </div>
+    </div>
+<div class="texto">
+    <p>
+Contrary to popular belief, Lorem Ipsum is not simply random text.
+    </p>
 </div>
-</body>
-</html>
+</div>
+
+<style>
+.contenedor {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: auto;
+}
+.numero {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 40px;
+}
+.right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+    }
+hr {
+        width: 100%;
+        border: 1px solid black;
+    }
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 15px;
+    }
+</style>

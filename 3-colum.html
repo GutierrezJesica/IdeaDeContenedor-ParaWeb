@@ -1,0 +1,64 @@
+<div class="contenedor">
+    <div class="grilla">
+        <div class="left">
+        </div>
+        <div class="center">
+            <a class="numero">1</a>
+        </div>
+        <div class="right">
+            <hr>
+        </div>
+    </div>
+<div class="texto">
+    <p>
+Contrary to popular belief, Lorem Ipsum is not simply random text.
+    </p>
+</div>
+</div>
+
+<style>
+.contenedor {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: auto;
+}
+.numero {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 40px;
+}
+.right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+    }
+hr {
+        width: 100%;
+        border: 1px solid black;
+    }
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 15px;
+    }
+</style>
